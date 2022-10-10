@@ -5,7 +5,7 @@ import Quiz from './Quiz';
 const Topic = () => {
     const quiz = useLoaderData();
     const quizData = quiz.data;
-    console.log(quizData);
+    //console.log(quizData);
     return (
         <div className='grid grid-cols-4 py-6 px-4 gap-4'>
             {
