@@ -11,7 +11,10 @@ const Quizqus = () => {
     console.log(questionNumber);
     return (
         <div>
-            <h3>Quiz of {quesionData.name}</h3>
+            <div className="flex justify-center items-center">
+            <img className='w-40' src={quesionData.logo} alt=''/>
+            <h3 className='text-4xl'>Quiz of {quesionData.name}</h3>
+            </div>
             <div className="">
                 {
                     questionNumber.map(number=><Quesdetails key={number.id} number={number}></Quesdetails>)
