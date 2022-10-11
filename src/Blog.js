@@ -4,7 +4,6 @@ import Header from './Header';
 const Blog = () => {
     return (
         <div>
-            <Header></Header>
            <div className="px-16 py-16">
             <h3 className='text-3xl font-medium'>1. What is the purpose of react router?</h3>
             <p className='text-xl mb-6'>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>

@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from './Header';
 import Lottie from "lottie-react";
 import quiz from "./91736-exams.json";
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
             <div className="md:flex justify-between">
                 <div className="mt-36 pl-10">
                     <h2 className='text-5xl font-medium mb-8'>Welcome</h2>
