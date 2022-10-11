@@ -14,7 +14,7 @@ const Option = ({option,correctAnswer}) => {
     };
     return (
         <div className=''>
-            <input className='mr-2' onChange={notify} type="radio" value={option}/>
+            <input className='mr-2' onChange={notify} type="radio" name='option1' value={option}/>
 <label className='mr-6'>{option}</label>
 <ToastContainer/>
         </div>
