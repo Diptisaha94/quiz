@@ -13,7 +13,7 @@ const Quesdetails = ({number}) => {
         toast(`Correct answer : ${correctAnswer}`);
     }
     return (
-        <div className='bg-cyan-50 w-3/4 m-auto mb-6 pb-12 text-center rounded-lg'>
+        <div className='bg-cyan-50 w-3/4 m-auto mb-6 pb-12 text-center rounded-lg shadow-lg shadow-cyan-100'>
             <div className="flex bg-cyan-200 justify-between px-6 py-6 items-center">
             <h3 className='text-xl mb-4'>{question}</h3>
             <button onClick={seeAnswer}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon>

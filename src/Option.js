@@ -6,14 +6,14 @@ const Option = ({option,correctAnswer}) => {
     const notify = (e) => {
         const target =e.target.value;
         if(target===correctAnswer){
-            toast("Wow so easy !");
+            toast("Correct Answer");
         }else{
-            toast("wrong ans !");
+            toast("Wrong Answer");
         }
 
     };
     return (
-        <div className=''>
+        <div className='mt-6'>
             <input className='mr-2' onChange={notify} type="radio" name='option1' value={option}/>
 <label className='mr-6'>{option}</label>
 <ToastContainer/>

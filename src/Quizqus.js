@@ -11,7 +11,7 @@ const Quizqus = () => {
     console.log(questionNumber);
     return (
         <div>
-            <div className="flex justify-center items-center">
+            <div className="md:flex justify-center items-center mt-10 mb-6">
             <img className='w-40' src={quesionData.logo} alt=''/>
             <h3 className='text-4xl'>Quiz of {quesionData.name}</h3>
             </div>
