@@ -1,8 +1,11 @@
 //import logo from './logo.svg';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './Blog';
 import Header from './Header';
+import Home from './Home';
 import Quizqus from './Quizqus';
+import Statistics from './Statistics';
 import Topic from './topic/Topic';
 
 function App() {
@@ -10,6 +13,18 @@ function App() {
     {
       path:"/",
       element:<Header></Header>
+    },
+    {
+      path:"/blog",
+      element:<Blog></Blog>
+    },
+    {
+      path:"/home",
+      element:<Home></Home>
+    },
+    {
+      path:"/statistics",
+      element:<Statistics></Statistics>
     },
     {
       path:"/topic",
