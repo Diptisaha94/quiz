@@ -1,10 +1,22 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
-const Option = ({option}) => {
+const Option = ({option,correctAnswer}) => {
+    const notify = (e) => {
+        const target =e.target.value;
+        if(target===correctAnswer){
+            toast("Wow so easy !");
+        }else{
+            toast("wrong ans !");
+        }
+
+    };
     return (
         <div>
-            <input type="radio" id="html" name="fav_language" value="HTML"/>
-<label for="html">{option}</label><br></br>
+            <input onChange={notify} type="radio" value={option}/>
+<label>{option}</label>
+<ToastContainer/>
         </div>
     );
 };
