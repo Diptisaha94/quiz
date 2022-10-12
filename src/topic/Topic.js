@@ -8,7 +8,7 @@ const Topic = () => {
     //console.log(quizData);
     return (
         <div className="mt-28">
-            <div className='md:grid grid-cols-4 py-6 px-4 gap-4'>
+            <div className='md:grid grid-cols-3 gap-y-8 py-6 px-4 gap-4'>
             {
                 quizData.map(single=><Quiz key={single.id} single={single}></Quiz>)
             }
